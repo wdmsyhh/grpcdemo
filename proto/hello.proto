@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package grpcdemo.hello;
+
+option go_package = "hello";
+
+message StringMessage {
+  // required
+  string value = 1; // valid:"required"
+  message Member {
+    string Name = 1;
+    int64 age = 2;
+  };
+  User User = 2;
+  repeated string names = 3;
+}
+
+message User {
+  string userName = 1;
+}

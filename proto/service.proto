@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package grpcdemo.hello;
+
+option go_package = "hello";
+
+import "proto/hello.proto";
+
+service HelloService {
+  rpc Hello (StringMessage) returns (StringMessage);
+}
