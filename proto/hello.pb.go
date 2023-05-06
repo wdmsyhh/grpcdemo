@@ -33,7 +33,7 @@ const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 type StringMessage struct {
 	// required
-	Value string   `protobuf:"bytes,1,opt,name=value" json:"value,omitempty" valid:"required"`
+	Value string   `protobuf:"bytes,1,opt,name=value" json:"value,omitempty"`
 	User  *User    `protobuf:"bytes,2,opt,name=User" json:"User,omitempty"`
 	Names []string `protobuf:"bytes,3,rep,name=names" json:"names,omitempty"`
 }

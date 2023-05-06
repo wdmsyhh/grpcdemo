@@ -4,6 +4,7 @@ go 1.19
 
 require (
 	github.com/golang/protobuf v1.5.3
+	github.com/grpc-ecosystem/grpc-gateway v1.16.0
 	golang.org/x/net v0.9.0
 	google.golang.org/grpc v1.54.0
 )

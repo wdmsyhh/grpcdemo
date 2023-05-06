@@ -1,0 +1,3 @@
+
+protoc --go_out=plugins=grpc:. ./proto/*.proto
+protoc --grpc-gateway_out=. --grpc-gateway_opt grpc_api_configuration=./proto/api.yaml ./proto/service.proto
